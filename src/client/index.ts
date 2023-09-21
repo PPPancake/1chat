@@ -14,7 +14,7 @@ export interface IOnTextCallbackResult {
 // Creates a model response for the given chat conversation.
 export const completion = async (
   request: OpenAI.ChatCompletions.Request,
-  onText?: (option: IOnTextCallbackResult) => void,
+  onText?: (option: IOnTextCallbackResult) => void, // 回调函数
   onError?: (error: Error) => void,
 ) => {
   if (request.messages.length === 0) {
@@ -22,12 +22,12 @@ export const completion = async (
   }
 
   // 是否取消 fetch
-  let hasCancel = false;
+  let hasCancel = false; // 跟踪是否触发了中断操作
   // fetch 中断对象
-  const controller = new AbortController();
+  const controller = new AbortController(); // 中断网络请求的浏览器内置对象
   const cancel = () => {
     hasCancel = true;
-    controller.abort();
+    controller.abort(); // 触发终端操作
   };
 
   let fullText = '';
@@ -37,7 +37,7 @@ export const completion = async (
     name: message.name,
   }));
   try {
-    const response = await fetch(
+    const response = await fetch( // 发送post请求
       `${request.host || DEFAULT_HOST}/v1/chat/completions`, {
       method: 'POST',
       headers: {
@@ -51,7 +51,7 @@ export const completion = async (
       }),
       signal: controller.signal,
     });
-    await handleSSE(response, (message) => {
+    await handleSSE(response, (message) => { // 得到response响应
       if (message === '[DONE]') {
         return;
       }
@@ -77,7 +77,7 @@ export const completion = async (
 };
 
 // 处理 server-sent events/eventsource,
-const handleSSE = async (
+const handleSSE = async ( // 处理服务器发送事件
   response: Response,
   onMessage: (message: string) => void,
 ) => {
@@ -93,7 +93,7 @@ const handleSSE = async (
   }
   const parser = createParser((event) => {
     if (event.type === 'event') {
-      onMessage(event.data);
+      onMessage(event.data); // 将每个事件的数据传递给调用者
     }
   });
   for await (const chunk of iterableStreamAsync(response.body)) {
@@ -102,10 +102,12 @@ const handleSSE = async (
   }
 };
 
+// 异步生成器函数：可读流转换为异步可迭代器
 const iterableStreamAsync = async function* (stream: ReadableStream): AsyncIterableIterator<Uint8Array> {
   const reader = stream.getReader();
   try {
     while (true) {
+      // 从流中读取数据
       const { value, done } = await reader.read();
       if (done) {
         return;

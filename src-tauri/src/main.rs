@@ -15,7 +15,7 @@ fn main() {
             commands::session::write_session,
             commands::session::delete_session,
         ])
-        .setup(setup::init)
+        // .setup(setup::init)
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

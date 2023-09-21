@@ -1,0 +1,23 @@
+{
+  "version": "0.1.9",
+  "notes": "See the assets to download this version and install.",
+  "pub_date": "2023-05-18T13:01:50.782Z",
+  "platforms": {
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWXpmMUorTXEyOVNLazNGcmxjdjVoc3J0Mm01OFV3ZmN4c0ZWdEJXdnZaWkxJRmZxU3U1Z2hZMFA3TXgvdWxxTVZiMmxKQmNsTVZiSjVnUVJjVURWbk9BSHNhYXkrU1F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg0NDE0NTM3CWZpbGU6MWNoYXRfMC4xLjRfYW1kNjQuQXBwSW1hZ2UudGFyLmd6ClBsK1A1aW9CNExRem0rZVgyQ01rbDhUWW5saEhzSUF3RThtTmRCejY0MTMvOFJMSkt2QmplaGxhakRTWjQyMHpxczVwSnBERm1jOXJValFiUzZmUERRPT0K",
+      "url": "https://github.com/IceEnd/1chat/releases/download/1chat-v0.1.4/1chat_0.1.4_amd64.AppImage.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWXpmMUorTXEyOWVVektZNHgydmtNRFRGMDBMZ1ZlNEN0MmJnMHdhcW1iRDFpU2FaWTRoczJ0QkNkV2tFTkh3T2VaK0h1eS9teC9nWmdLOExnMzhRYmkzUjQ1M3krdGdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg0NDE0NzE0CWZpbGU6MWNoYXQuYXBwLnRhci5negpKRTVuZWk4RW9QRTlHQWs1dWN2N2M3cFRZdmdua0daa2NoRjlrUzNyby9kMWsyK3NmTTkyVkcranh0SkROdXBMWkYvaGxIeUFPdnlNdEE1RUV2RmdEZz09Cg==",
+      "url": "https://github.com/IceEnd/1chat/releases/download/1chat-v0.1.4/1chat_x64.app.tar.gz"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWXpmMUorTXEyOVVXVjZXT3dJbXFjeVRqdWlTb3UvWEFxTklod2E3RkdPcXJqTjZ3cTJQM0NYeDJLN2Z6am9hbzZCa2xVWDdFMVB6NEk5Y2VYTE40SzkraUk0UFRweEFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg0NDE0NzMzCWZpbGU6MWNoYXQuYXBwLnRhci5negpqTENydFVmNzVsNUVwTTRld0Jtak9ORGFMSHlQa2tXUzBxNktFT29yT0pvK0djazFkMmFHcVhqUG02ZDJsRk00RlF0YWE2c0VvQTh1MnNTKzVJSUpBQT09Cg==",
+      "url": "https://github.com/IceEnd/1chat/releases/download/1chat-v0.1.4/1chat_aarch64.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWXpmMUorTXEyOVQyRHJ5aWdjRjhlY0xTam1lU24wek1KOW1hdU53ci90SUh4WFV4V2NNYmUrTjJVOSs2Z3VKQXAwZ1RoVkwrblJnSzJQdWplMFdjek4zVEI1bkR4dHdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg0NDE0OTA4CWZpbGU6MWNoYXRfMC4xLjRfeDY0X2VuLVVTLm1zaS56aXAKeTljbk1nMmQxaWYyL3FTL0Y1NlluRmJDT0xjNDdlVnFkRXM5M2ZONkZUK1VCRjVYcVZMbS9vMHdnQkJFdkMvRGxzTVRGWEFGVEl4M1I1bkhzTG9UQnc9PQo=",
+      "url": "https://github.com/IceEnd/1chat/releases/download/1chat-v0.1.4/1chat_0.1.4_x64_en-US.msi.zip"
+    }
+  }
+}

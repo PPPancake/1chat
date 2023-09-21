@@ -37,7 +37,7 @@
       "csp": null
     },
     "updater": {
-      "active": true,
+      "active": false,
       "endpoints": [
         "https://oversea-1251190880.cos.accelerate.myqcloud.com/1chat/latest.json",
         "https://gist.githubusercontent.com/IceEnd/710378622d3551b06a3540e206fdc10a/raw"
